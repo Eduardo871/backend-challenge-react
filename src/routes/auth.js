@@ -12,7 +12,7 @@ server.get('/failureRedirect', failure);
 server.post('/login',
 passport.authenticate('local',{
     successRedirect:'/',
-    failureRedirect: 'failureRedirect'
+    failureRedirect: '/failureRedirect'
 }),
 (req, res, next) => {req.logIn(); next()}
 
