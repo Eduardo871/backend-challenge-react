@@ -27,7 +27,7 @@ server.use((req, res, next) => {
     if(
         req.path === '/auth/login' ||
         req.path === '/auth/registerAdmin' ||
-        req.path === '/failureRedirect' ||
+        req.path === '/auth/failureRedirect' ||
         req.path === '/initialBulckcreate' 
 
         ){
